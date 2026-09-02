@@ -7,83 +7,91 @@
 
     <title>Portofolio | Intan Sari</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
+        <div class="container nav-container">
 
-            <div class="logo">
+            <a href="#home" class="logo">
                 Intan<span>.</span>
-            </div>
-
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+            </a>
 
             <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                ☰
             </div>
 
-        </nav>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#projects">Proyek</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+        </div>
     </header>
 
 
     <!-- ================= HOME ================= -->
     <section id="home" class="hero">
 
-        <div class="hero-text">
+        <div class="container hero-container">
 
-            <p class="hello">
-                Halo, saya
-            </p>
+            <div class="hero-text">
 
-            <h1>
-                Intan <span>Sari</span>
-            </h1>
+                <p class="hello">
+                    Halo, saya
+                </p>
 
-            <h2>
-                Pelajar <span>RPL</span>
-            </h2>
+                <h1>
+                    Intan <span>Sari</span>
+                </h1>
 
-            <p class="description">
-                Saya adalah seorang pelajar Rekayasa Perangkat Lunak
-                yang tertarik dengan dunia teknologi, pemrograman,
-                desain website, dan pengembangan aplikasi.
-            </p>
+                <h2>
+                    Pelajar <span>RPL</span>
+                </h2>
 
-            <div class="hero-buttons">
-                <a href="#about" class="btn primary">
-                    Tentang Saya
-                </a>
+                <p class="hero-description">
+                    Saya adalah seorang pelajar jurusan Rekayasa Perangkat Lunak
+                    yang tertarik dengan dunia teknologi, pemrograman,
+                    pembuatan website, dan aplikasi.
+                </p>
 
-                <a href="#contact" class="btn secondary">
-                    Hubungi Saya
-                </a>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn primary">
+                        Tentang Saya
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+                        Hubungi Saya
+                    </a>
+                </div>
+
             </div>
 
-        </div>
 
+            <!-- FOTO -->
+            <div class="hero-image">
 
-        <div class="hero-image">
+                <div class="profile-circle">
 
-            <div class="profile-circle">
-                <div class="profile-icon">
-                    👩‍💻
+                    <img
+                        src="foto.jpg"
+                        alt="Foto Intan Sari"
+                    >
+
                 </div>
+
             </div>
 
         </div>
@@ -91,96 +99,71 @@
     </section>
 
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ================= TENTANG ================= -->
     <section id="about" class="section">
 
-        <div class="section-title">
+        <div class="container">
 
-            <p>
-                TENTANG SAYA
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Perkenalan <span>Diri</span>
-            </h2>
+                <p>Kenali saya lebih dekat</p>
 
-        </div>
-
-
-        <div class="about-content">
-
-            <div class="about-card">
-
-                <h3>
-                    Siapa Saya?
-                </h3>
-
-                <p>
-                    Halo! Nama saya
-                    <strong>Intan Sari</strong>.
-                    Saya merupakan pelajar dari jurusan
-                    Rekayasa Perangkat Lunak (RPL).
-                </p>
-
-                <p>
-                    Saya memiliki ketertarikan dalam membuat website,
-                    mempelajari bahasa pemrograman, serta mengembangkan
-                    berbagai proyek sederhana menggunakan teknologi web.
-                </p>
-
-                <p>
-                    Saya senang mempelajari hal baru dan terus berusaha
-                    meningkatkan kemampuan saya di bidang teknologi.
-                </p>
+                <h2>
+                    Tentang <span>Saya</span>
+                </h2>
 
             </div>
 
 
-            <div class="about-info">
+            <div class="about-container">
 
-                <div class="info-box">
+                <div class="about-card">
 
-                    <span>👤</span>
+                    <h3>
+                        Siapa Saya?
+                    </h3>
 
-                    <div>
-                        <h4>Nama</h4>
-                        <p>Intan Sari</p>
-                    </div>
+                    <p>
+                        Halo! Nama saya <strong>Intan Sari</strong>.
+                        Saya merupakan pelajar jurusan
+                        <strong>Rekayasa Perangkat Lunak (RPL)</strong>.
+                    </p>
 
-                </div>
+                    <p>
+                        Saya memiliki ketertarikan pada bidang teknologi,
+                        khususnya dalam membuat website, aplikasi,
+                        dan mempelajari berbagai bahasa pemrograman.
+                    </p>
 
-
-                <div class="info-box">
-
-                    <span>🎓</span>
-
-                    <div>
-                        <h4>Jurusan</h4>
-                        <p>Rekayasa Perangkat Lunak</p>
-                    </div>
-
-                </div>
-
-
-                <div class="info-box">
-
-                    <span>💻</span>
-
-                    <div>
-                        <h4>Bidang</h4>
-                        <p>Web Development</p>
-                    </div>
+                    <p>
+                        Saya terus belajar dan mengembangkan kemampuan
+                        agar dapat menghasilkan karya yang bermanfaat
+                        dan menarik.
+                    </p>
 
                 </div>
 
 
                 <div class="info-box">
 
-                    <span>📍</span>
+                    <div class="info-item">
+                        <span>Nama</span>
+                        <strong>Intan Sari</strong>
+                    </div>
 
-                    <div>
-                        <h4>Domisili</h4>
-                        <p>Kalimantan Barat, Indonesia</p>
+                    <div class="info-item">
+                        <span>Jurusan</span>
+                        <strong>Rekayasa Perangkat Lunak</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Bidang</span>
+                        <strong>Web & Software Development</strong>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Lokasi</span>
+                        <strong>Kalimantan Barat, Indonesia</strong>
                     </div>
 
                 </div>
@@ -192,140 +175,122 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
+    <!-- ================= KEAHLIAN ================= -->
     <section id="skills" class="section skills-section">
 
-        <div class="section-title">
+        <div class="container">
 
-            <p>
-                KEMAMPUAN
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Keahlian <span>Saya</span>
-            </h2>
+                <p>Kemampuan yang saya pelajari</p>
 
-        </div>
-
-
-        <div class="skills-container">
-
-            <!-- HTML -->
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    🌐
-                </div>
-
-                <h3>
-                    HTML
-                </h3>
-
-                <p>
-                    Membuat struktur halaman website
-                    menggunakan HTML.
-                </p>
-
-                <div class="progress">
-                    <div
-                        class="progress-bar"
-                        data-width="85%">
-                    </div>
-                </div>
-
-                <span>
-                    85%
-                </span>
+                <h2>
+                    Keahlian <span>Saya</span>
+                </h2>
 
             </div>
 
 
-            <!-- CSS -->
-            <div class="skill-card">
+            <div class="skills-grid">
 
-                <div class="skill-icon">
-                    🎨
-                </div>
+                <!-- HTML -->
+                <div class="skill-card">
 
-                <h3>
-                    CSS
-                </h3>
+                    <div class="skill-header">
 
-                <p>
-                    Membuat tampilan website yang
-                    menarik dan responsif.
-                </p>
+                        <h3>HTML</h3>
 
-                <div class="progress">
-                    <div
-                        class="progress-bar"
-                        data-width="80%">
+                        <span>85%</span>
+
                     </div>
-                </div>
 
-                <span>
-                    80%
-                </span>
-
-            </div>
-
-
-            <!-- JAVASCRIPT -->
-            <div class="skill-card">
-
-                <div class="skill-icon">
-                    ⚡
-                </div>
-
-                <h3>
-                    JavaScript
-                </h3>
-
-                <p>
-                    Membuat website menjadi interaktif
-                    dan dinamis.
-                </p>
-
-                <div class="progress">
-                    <div
-                        class="progress-bar"
-                        data-width="70%">
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            data-width="85%"
+                        ></div>
                     </div>
+
+                    <p>
+                        Membuat struktur dan halaman website.
+                    </p>
+
                 </div>
 
-                <span>
-                    70%
-                </span>
 
-            </div>
+                <!-- CSS -->
+                <div class="skill-card">
 
+                    <div class="skill-header">
 
-            <!-- MYSQL -->
-            <div class="skill-card">
+                        <h3>CSS</h3>
 
-                <div class="skill-icon">
-                    🗄️
-                </div>
+                        <span>80%</span>
 
-                <h3>
-                    MySQL
-                </h3>
-
-                <p>
-                    Mengelola database untuk kebutuhan
-                    aplikasi.
-                </p>
-
-                <div class="progress">
-                    <div
-                        class="progress-bar"
-                        data-width="65%">
                     </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            data-width="80%"
+                        ></div>
+                    </div>
+
+                    <p>
+                        Mendesain tampilan website agar menarik dan responsif.
+                    </p>
+
                 </div>
 
-                <span>
-                    65%
-                </span>
+
+                <!-- JAVASCRIPT -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <h3>JavaScript</h3>
+
+                        <span>70%</span>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            data-width="70%"
+                        ></div>
+                    </div>
+
+                    <p>
+                        Membuat website menjadi interaktif.
+                    </p>
+
+                </div>
+
+
+                <!-- MYSQL -->
+                <div class="skill-card">
+
+                    <div class="skill-header">
+
+                        <h3>MySQL</h3>
+
+                        <span>65%</span>
+
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="progress-bar"
+                            data-width="65%"
+                        ></div>
+                    </div>
+
+                    <p>
+                        Mengelola database untuk aplikasi.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -334,115 +299,93 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
+    <!-- ================= PROYEK ================= -->
     <section id="projects" class="section">
 
-        <div class="section-title">
+        <div class="container">
 
-            <p>
-                PORTOFOLIO
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Proyek <span>Saya</span>
-            </h2>
+                <p>Beberapa karya yang pernah saya buat</p>
 
-        </div>
+                <h2>
+                    Proyek <span>Saya</span>
+                </h2>
+
+            </div>
 
 
-        <div class="projects-container">
+            <div class="projects-grid">
 
-            <!-- PROJECT 1 -->
-            <div class="project-card">
+                <!-- PROJECT 1 -->
+                <div class="project-card">
 
-                <div class="project-image">
-                    🌐
-                </div>
-
-                <div class="project-content">
+                    <div class="project-icon">
+                        🌐
+                    </div>
 
                     <h3>
                         Website Profil Desa
                     </h3>
 
                     <p>
-                        Website informasi desa yang berisi
-                        profil, informasi, dan kontak desa.
+                        Website informasi mengenai profil desa,
+                        pelayanan, berita, dan informasi masyarakat.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
 
-                    <a href="#" class="project-link">
-                        Lihat Proyek →
-                    </a>
-
                 </div>
 
-            </div>
 
+                <!-- PROJECT 2 -->
+                <div class="project-card">
 
-            <!-- PROJECT 2 -->
-            <div class="project-card">
-
-                <div class="project-image">
-                    🛒
-                </div>
-
-                <div class="project-content">
+                    <div class="project-icon">
+                        💻
+                    </div>
 
                     <h3>
                         Aplikasi Kasir
                     </h3>
 
                     <p>
-                        Aplikasi sederhana untuk membantu
-                        proses pencatatan transaksi.
+                        Aplikasi kasir sederhana untuk membantu proses
+                        pencatatan transaksi dan pengelolaan data.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>Java</span>
                         <span>MySQL</span>
                     </div>
 
-                    <a href="#" class="project-link">
-                        Lihat Proyek →
-                    </a>
-
                 </div>
 
-            </div>
 
+                <!-- PROJECT 3 -->
+                <div class="project-card">
 
-            <!-- PROJECT 3 -->
-            <div class="project-card">
-
-                <div class="project-image">
-                    📱
-                </div>
-
-                <div class="project-content">
+                    <div class="project-icon">
+                        📱
+                    </div>
 
                     <h3>
                         Aplikasi Mobile
                     </h3>
 
                     <p>
-                        Proyek aplikasi mobile sederhana
-                        sebagai latihan pengembangan aplikasi.
+                        Aplikasi mobile sederhana yang dibuat untuk
+                        mempelajari pengembangan aplikasi menggunakan Flutter.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>Flutter</span>
                         <span>Dart</span>
                     </div>
-
-                    <a href="#" class="project-link">
-                        Lihat Proyek →
-                    </a>
 
                 </div>
 
@@ -453,105 +396,149 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- ================= KONTAK ================= -->
     <section id="contact" class="section contact-section">
 
-        <div class="section-title">
+        <div class="container">
 
-            <p>
-                KONTAK
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Hubungi <span>Saya</span>
-            </h2>
+                <p>Mari terhubung dengan saya</p>
 
-        </div>
-
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <h3>
-                    Mari Terhubung!
-                </h3>
-
-                <p>
-                    Jika ingin menghubungi saya, silakan
-                    gunakan informasi kontak di bawah ini.
-                </p>
-
-
-                <div class="contact-item">
-
-                    <span>📧</span>
-
-                    <div>
-                        <h4>Email</h4>
-                        <p>intansari@gmail.com</p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>📱</span>
-
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p>08xxxxxxxxxx</p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>📍</span>
-
-                    <div>
-                        <h4>Lokasi</h4>
-                        <p>Kalimantan Barat, Indonesia</p>
-                    </div>
-
-                </div>
+                <h2>
+                    Hubungi <span>Saya</span>
+                </h2>
 
             </div>
 
 
-            <!-- FORM -->
-            <form id="contactForm" class="contact-form">
+            <div class="contact-container">
 
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Nama"
-                    required
-                >
+                <!-- INFORMASI KONTAK -->
+                <div class="contact-info">
 
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Email"
-                    required
-                >
+                    <h3>
+                        Informasi Kontak
+                    </h3>
 
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Pesan"
-                    required
-                ></textarea>
+                    <p>
+                        Jika ingin menghubungi saya, silakan gunakan
+                        informasi kontak berikut.
+                    </p>
 
-                <button
-                    type="submit"
-                    class="btn primary">
-                    Kirim Pesan
-                </button>
 
-            </form>
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>
+                                intansari@gmail.com
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <span>WhatsApp</span>
+                            <strong>
+                                08xxxxxxxxxx
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <span>Lokasi</span>
+                            <strong>
+                                Kalimantan Barat, Indonesia
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM KONTAK -->
+                <div class="contact-form-box">
+
+                    <form id="contactForm">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Nama
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Masukkan nama kamu"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Masukkan email kamu"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Pesan
+                            </label>
+
+                            <textarea
+                                id="message"
+                                rows="5"
+                                placeholder="Tulis pesan kamu..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn primary submit-btn"
+                        >
+                            Kirim Pesan
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -559,46 +546,60 @@
 
 
     <!-- ================= FOOTER ================= -->
-    <footer>
+    <footer class="footer">
 
-        <div class="footer-content">
+        <div class="container">
 
-            <h2>
-                Intan Sari<span>.</span>
-            </h2>
+            <div class="footer-content">
 
-            <p>
-                Pelajar RPL | Web Development | Technology
-            </p>
+                <div>
+
+                    <h3>
+                        Intan<span>.</span>
+                    </h3>
+
+                    <p>
+                        Pelajar RPL yang sedang belajar
+                        dan berkembang di dunia teknologi.
+                    </p>
+
+                </div>
 
 
-            <div class="social-links">
+                <div class="social-links">
 
-                <a href="#">
-                    Instagram
-                </a>
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
 
-                <a href="#">
-                    GitHub
-                </a>
+                    <a href="#" aria-label="GitHub">
+                        GitHub
+                    </a>
 
-                <a href="#">
-                    TikTok
-                </a>
+                    <a href="#" aria-label="TikTok">
+                        TikTok
+                    </a>
+
+                </div>
 
             </div>
 
 
-            <p class="copyright">
-                © <span id="year"></span>
-                Intan Sari. Semua Hak Dilindungi.
-            </p>
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="year"></span>
+                    Intan Sari. Semua Hak Dilindungi.
+                </p>
+
+            </div>
 
         </div>
 
     </footer>
 
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
