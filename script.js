@@ -1,55 +1,41 @@
 ```javascript
-// ===============================
-// MENU MOBILE
-// ===============================
+// ================= MENU MOBILE =================
 
-const menuToggle =
-    document.querySelector(".menu-toggle");
-
-const navMenu =
-    document.querySelector(".nav-menu");
-
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
 menuToggle.addEventListener("click", () => {
-
     navMenu.classList.toggle("active");
+});
+
+
+// Menutup menu setelah link diklik
+
+document.querySelectorAll(".nav-menu a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+
+    });
 
 });
 
 
-// Menutup menu ketika link diklik
-
-document
-    .querySelectorAll(".nav-menu a")
-    .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navMenu.classList.remove("active");
-
-        });
-
-    });
-
-
-// ===============================
-// TAHUN FOOTER OTOMATIS
-// ===============================
+// ================= TAHUN FOOTER OTOMATIS =================
 
 document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-// ===============================
-// ANIMASI SKILL
-// ===============================
+// ================= ANIMASI SKILL =================
 
 const progressBars =
     document.querySelectorAll(".progress-bar");
 
-
 const skillObserver =
     new IntersectionObserver(
+
         (entries) => {
 
             entries.forEach(entry => {
@@ -57,21 +43,20 @@ const skillObserver =
                 if (entry.isIntersecting) {
 
                     const width =
-                        entry.target.getAttribute(
-                            "data-width"
-                        );
+                        entry.target.getAttribute("data-width");
 
-                    entry.target.style.width =
-                        width;
+                    entry.target.style.width = width;
 
                 }
 
             });
 
         },
+
         {
             threshold: 0.5
         }
+
     );
 
 
@@ -82,74 +67,74 @@ progressBars.forEach(bar => {
 });
 
 
-// ===============================
-// FORM KONTAK
-// ===============================
+// ================= FORM KONTAK =================
 
 const contactForm =
     document.getElementById("contactForm");
 
 
-contactForm.addEventListener(
-    "submit",
-    function(event) {
+contactForm.addEventListener("submit", function(event) {
 
-        event.preventDefault();
+    event.preventDefault();
 
 
-        const name =
-            document.getElementById("name").value.trim();
-
-        const email =
-            document.getElementById("email").value.trim();
-
-        const message =
-            document.getElementById("message").value.trim();
+    const name =
+        document.getElementById("name")
+        .value
+        .trim();
 
 
-        if (
-            name === "" ||
-            email === "" ||
-            message === ""
-        ) {
+    const email =
+        document.getElementById("email")
+        .value
+        .trim();
 
-            alert(
-                "Silakan isi semua bagian formulir."
-            );
 
-            return;
+    const message =
+        document.getElementById("message")
+        .value
+        .trim();
 
-        }
 
+    if (
+        name === "" ||
+        email === "" ||
+        message === ""
+    ) {
 
         alert(
-            "Terima kasih, " +
-            name +
-            "! Pesan kamu berhasil dikirim."
+            "Silakan isi semua bagian formulir."
         );
 
-
-        contactForm.reset();
-
+        return;
     }
-);
 
 
-// ===============================
-// ANIMASI CARD SAAT SCROLL
-// ===============================
-
-const cards =
-    document.querySelectorAll(
-        ".skill-card, " +
-        ".project-card, " +
-        ".about-card, " +
-        ".info-box"
+    alert(
+        "Terima kasih, " +
+        name +
+        "! Pesan kamu berhasil dikirim."
     );
+
+
+    contactForm.reset();
+
+});
+
+
+// ================= ANIMASI CARD SAAT SCROLL =================
+
+const cards = document.querySelectorAll(
+    ".skill-card, " +
+    ".project-card, " +
+    ".about-card, " +
+    ".info-box"
+);
 
 
 const cardObserver =
     new IntersectionObserver(
+
         (entries) => {
 
             entries.forEach(entry => {
@@ -166,9 +151,11 @@ const cardObserver =
             });
 
         },
+
         {
             threshold: 0.15
         }
+
     );
 
 
